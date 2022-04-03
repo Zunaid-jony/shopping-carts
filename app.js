@@ -15,7 +15,7 @@ function updateCaseNumber(isInreasing){
     // update case totall 
     const caseTotal = document.getElementById('case-total');
     caseTotal.innerText = caseNumber * 59;
-//............................................................................
+//.............................. phone functions ..............................................
 }
 function updateCaseNumberPhone(isInreasingPhone){
     const caseInput = document.getElementById('phone-number');
@@ -36,6 +36,20 @@ function updateCaseNumberPhone(isInreasingPhone){
     caseTotal.innerText = phoneNumber * 1219;
 
 }
+function getInputValue(){
+    const phoneInput = document.getElementById('phone-number');
+    const phoneNumber =parseInt(phoneInput.value);
+    return phoneNumber;
+
+}
+// total calculate function .....................
+function calculateTotal(){
+   
+    const phoneTotal = getInputValue() * 1219;
+
+}
+
+
 // handle phone ...................
 document.getElementById('phone-plus').addEventListener('click', function(){
     updateCaseNumberPhone(true);
